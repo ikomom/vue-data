@@ -35,6 +35,12 @@ const vueRouter = new Router({
     name: 'view',
     component: () =>
       import( /* webpackChunkName: "page" */ '@/page/view')
-  }]
+  }, {
+    path: '/test',
+    name: 'test',
+    component: () =>
+      import( /* webpackChunkName: "page" */ '@/page/TestPlace')
+  },
+  ]
 })
 export default vueRouter;
